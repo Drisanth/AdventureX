@@ -1,4 +1,4 @@
-# AdventureX - Sports & Equipment E-Commerce Site  
+# AdventureX 
 
 AdventureX is a static e-commerce website designed for showcasing sports and adventure equipment. Built using HTML and CSS, it offers an intuitive browsing experience with a clean, responsive design.  
 
