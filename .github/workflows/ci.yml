@@ -1,0 +1,30 @@
+name: AdventureX
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Hugo
+      run: |
+        sudo apt-get install hugo -y
+
+    - name: Build the website
+      run: |
+        hugo
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: public/
